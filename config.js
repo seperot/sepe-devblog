@@ -1,17 +1,17 @@
 module.exports = {
   title: 'Dev Blog', // Required
-  author: 'Ryan Fitzgerald', // Required
-  description: 'Full-stack Web Developer',
-  primaryColor: '#3498db', // Required
+  author: 'Ian Hayward', // Required
+  description: 'A good name and description coming soon™',
+  primaryColor: '#1d2456', // Required
   showHeaderImage: true,
   showShareButtons: true,
   postsPerPage: 5, // Required
   social: {
-    website: 'https://ryanfitzgerald.ca',
-    github: 'https://github.com/ryanfitzgerald',
-    twitter: 'https://twitter.com/ryanafitzgerald',
-    linkedin: 'https://ca.linkedin.com/in/ryanafitzgerald',
+    website: 'http://ijhdev.co.uk',
+    github: 'https://github.com/seperot',
+    twitter: 'https://twitter.com/Seperot',
+    linkedin: 'www.linkedin.com/in/ianjhayward',
   },
   pathPrefix: '/devblog',
-  siteUrl: 'https://ryanfitzgerald.github.io/devblog/',
+  siteUrl: 'https://github.com/seperot/sepe-devblog',
 };
