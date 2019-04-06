@@ -1,9 +1,9 @@
 ---
 title: Welcome to the Blog!
-date: "2018-07-01"
-featuredImage: './bestcomputing.jpg'
+date: "2019-04-02"
+featuredImage: './construction.jpg'
 ---
 
 Blog under construction - please wait
 
-![Construction](./construction.jpg)
+![Construction](./bestcomputing.jpg)
