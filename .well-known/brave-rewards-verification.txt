@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ijhdev.co.uk 
+Token: e26ccd51a0a8e055302ea542714394252da945c4480850b344997a515ef9fadb
