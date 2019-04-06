@@ -5,6 +5,7 @@ module.exports = {
     title: userConfig.title,
     author: userConfig.author,
     description: userConfig.description,
+    additionalDescription: userConfig.additionalDescription,
     siteUrl: userConfig.siteUrl,
   },
   pathPrefix: userConfig.pathPrefix,
