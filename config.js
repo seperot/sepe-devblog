@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Dev Blog', // Required
+  title: 'IJHDev Blog', // Required
   author: 'Ian Hayward', // Required
   description: 'The blog of a tech lead, equal parts tutorial and archive for things I have worked on.',
   additionalDescription: 'I don\'t do adverts and would rather a free crypto viewing model. If you are interested in either how that works or helping me out, click on the Brave or BitTube links below',
