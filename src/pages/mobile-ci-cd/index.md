@@ -3,7 +3,7 @@ title: Getting started with CI/CD for Mobile Development
 date: "2019-04-06"
 featuredImage: './images/ci-cd-mobile.jpg'
 ---
-WIP: A guide on minimizing faff and getting a scalable team moving faster
+A guide on minimizing faff and getting a scalable team moving faster
 <!-- end -->
 
 ###Caveats and Preamble
