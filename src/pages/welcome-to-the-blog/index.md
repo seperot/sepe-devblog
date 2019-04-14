@@ -1,6 +1,6 @@
 ---
 title: Welcome to the Blog!
-date: "2019-04-02"
+date: "2019-01-01"
 featuredImage: './bestcomputing.jpg'
 ---
 ^An image of me making this blog
