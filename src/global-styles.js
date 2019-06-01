@@ -32,6 +32,11 @@ injectGlobal`
     max-width: 100%;
   }
 
+  #postsection {
+    position:relative;
+  }
+
+
   .gatsby-highlight {
     border-bottom: 1px solid #e0e6ed;
     border-top: 1px solid #e0e6ed;

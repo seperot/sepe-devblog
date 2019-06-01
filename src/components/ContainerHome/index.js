@@ -1,0 +1,11 @@
+import styled from 'styled-components';
+
+const ContainerHome = styled.section`
+margin: 0 auto;
+width: 70%;
+
+@media only screen and (max-width: 1320px) {
+}
+`;
+
+export default ContainerHome;

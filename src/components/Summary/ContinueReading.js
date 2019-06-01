@@ -5,12 +5,14 @@ import userConfig from '../../../config';
 const ContinueReading = styled(GatsbyLink)`
   color: #666d71;
   display: inline-block;
-  font-size: 14px;
-  margin-top: 50px;
+  font-size: 24px;
+  margin-top: 30px;
+  font-weight: bold;
   text-decoration: none;
 
   &:hover {
     color: ${userConfig.primaryColor};
+    font-weight: bolder;
   }  
 `;
 
