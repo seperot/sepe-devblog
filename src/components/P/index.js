@@ -5,7 +5,7 @@ const P = styled.p`
   display: block;
   font-size: 1.6em;
   margin: 10px 0 0 0;
-  text-align: center;
+  text-align: left;
 `;
 
 export default P;

@@ -10,7 +10,7 @@ import Layout from './layout';
 import Article from '../components/Article';
 import ArticleHeader from '../components/ArticleHeader';
 import Button from '../components/Button';
-import Card from '../components/Card';
+import Card from '../components/CardBlog';
 import Container from '../components/ContainerBlog';
 import FeaturedImage from '../components/FeaturedImage';
 import PageNav from '../components/PageNav';

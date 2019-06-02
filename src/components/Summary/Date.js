@@ -5,7 +5,7 @@ const Date = styled.span`
   display: block;
   font-size: 1.4em;
   margin: 5px 0 0 0;
-  text-align: center;
+  text-align: left;
 `;
 
 export default Date;
