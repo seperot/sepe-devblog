@@ -6,7 +6,7 @@ import userConfig from '../../config';
 import Layout from './layout';
 
 import Card from '../components/Card';
-import Container from '../components/Container';
+import Container from '../components/ContainerHome';
 import Pagination from '../components/Pagination';
 import Summary from '../components/Summary';
 
@@ -19,13 +19,13 @@ const IndexPage = ({ pageContext }) => {
       <Container>
         <Helmet
           title={`${userConfig.title} | ${userConfig.author}`}
-          htmlAttributes={{ lang: 'en' }}
         >
           <meta
             name="description"
             content={`${userConfig.title} | ${userConfig.description}`}
           />
         </Helmet>
+        <div class="postsection">
         {group.map(({ node }) => (
           <Card key={node.fields.slug}>
             <Summary
@@ -37,6 +37,7 @@ const IndexPage = ({ pageContext }) => {
             />
           </Card>
         ))}
+        </div>
         <Pagination
           isFirst={index === 1}
           isLast={index === pageCount}

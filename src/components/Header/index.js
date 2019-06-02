@@ -1,7 +1,7 @@
 import React from 'react';
 import userConfig from '../../../config';
 
-import Container from '../Container';
+import Container from '../ContainerHome';
 import HeaderImage from '../HeaderImage';
 import Social from '../Social';
 import H1 from '../H1';

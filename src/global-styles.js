@@ -32,6 +32,39 @@ injectGlobal`
     max-width: 100%;
   }
 
+  .postsection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+    @media (max-width: 1050px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 1050px) {
+    .postsection {
+      grid-template-columns: 1fr 1fr; 
+    }
+  }
+  
+  li { 
+    word-break: break-word; 
+  }
+
+  @media (max-width: 690px) {
+    .postsection {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+  .cardinfo {
+    height: 320px;
+  }
+
   .gatsby-highlight {
     border-bottom: 1px solid #e0e6ed;
     border-top: 1px solid #e0e6ed;

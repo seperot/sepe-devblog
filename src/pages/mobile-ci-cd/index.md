@@ -1,5 +1,5 @@
 ---
-title: Getting started with CI/CD for Mobile Development
+title: CI/CD for Mobile Development
 date: "2019-04-13"
 featuredImage: './images/ci-cd-mobile.jpg'
 ---
