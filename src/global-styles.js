@@ -35,7 +35,7 @@ injectGlobal`
   .postsection {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 0 0;
+    padding: 50px 20px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
