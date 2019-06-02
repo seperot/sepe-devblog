@@ -11,7 +11,7 @@ import ContinueReading from './ContinueReading';
 function Summary({date, title, excerpt, slug, image}) {
   return (
     <Wrapper>
-      <div id="cardinfo">
+      <div class="cardinfo">
         {image &&
           <Link to={slug}>
             <FeaturedImage sizes={image.childImageSharp.sizes}/>

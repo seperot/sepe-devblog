@@ -14,6 +14,15 @@ const ContinueReading = styled(GatsbyLink)`
     color: ${userConfig.primaryColor};
     font-weight: bolder;
   }  
+
+  @media (max-width: 1260px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 1090px) {
+    font-size: 16px;
+  }
+
 `;
 
 export default ContinueReading;

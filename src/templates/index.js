@@ -25,7 +25,7 @@ const IndexPage = ({ pageContext }) => {
             content={`${userConfig.title} | ${userConfig.description}`}
           />
         </Helmet>
-        <div id="postsection">
+        <div class="postsection">
         {group.map(({ node }) => (
           <Card key={node.fields.slug}>
             <Summary
