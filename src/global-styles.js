@@ -51,6 +51,10 @@ injectGlobal`
     }
   }
   
+  li { 
+    word-break: break-word; 
+  }
+
   @media (max-width: 690px) {
     .postsection {
       grid-template-columns: 1fr; 
