@@ -34,8 +34,17 @@ injectGlobal`
 
   #postsection {
     position:relative;
+    @media only screen and (max-width: 1380px) {
+      margin-left: 15%;
+    }
+    @media only screen and (max-width: 1080px) {
+      margin-left: 0;
+    }
   }
 
+  #cardinfo {
+    height: 400px;
+  }
 
   .gatsby-highlight {
     border-bottom: 1px solid #e0e6ed;

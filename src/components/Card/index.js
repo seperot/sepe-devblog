@@ -8,7 +8,7 @@ const Card = styled.div`
   padding: 50px 20px;
   width: 30%;
   min-width: 300px;
-  min-height: 580px;
+  min-height: 500px;
   float: left;
 
   @media only screen and (max-width: 920px) {
