@@ -2,7 +2,7 @@
 
 # Blog of Ian
 
-You can go to [my site](https://ijhdev.co.uk) to see this in action
+You can go to [my site](https://ijh.dev) to see this in action
 
 ## License
 
