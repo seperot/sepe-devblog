@@ -1,6 +1,6 @@
 ---
 title: Making a middleware API layer in GO 
-date: "2019-21-11"
+date: "2019-11-21"
 featuredImage: './images/gopherbig.png'
 ---
 (TurtleWare 2.0 pt1)
