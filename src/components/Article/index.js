@@ -80,6 +80,17 @@ const Article = styled.article`
       margin: 0;
     }
   }
+
+  pre {
+    border-left: 5px solid #e0e6ed;
+    line-height: 1.7;
+    margin: 15px 50px 15px 75px;
+    padding: 10px 10px 10px 15px;
+
+    p {
+      margin: 0;
+    }
+  }
   
   ul,
   ol {

@@ -29,9 +29,9 @@ History lesson aside, why build a middleware API?
 
 One thing I like about learning new languages is just trying things based on how I think it will work, getting it wrong, looking up how to make it work, and finally fixing it. It’s great as you go through your project as you will find you will get more and more right as you work through it.
 
-> So for example when I first built the handler for listen and serving http, I had set it up like this:
+So for example when I first built the handler for listen and serving http, I had set it up like this:
 
-```
+```go
 func serveCoinValue(w http.ResponseWriter, r *http.Request) {
 		Usd: "$" + priceCalculator.PriceCalc("USD", priceCalculator.ExchangeOgre), coinval := coinValue{"$" + priceCalculator.PriceCalc("USD", priceCalculator.ExchangeOgre),
 		Btc: "₿" + priceCalculator.PriceCalc("BTC", priceCalculator.ExchangeOgre), "₿" + priceCalculator.PriceCalc("BTC", priceCalculator.ExchangeOgre)}
