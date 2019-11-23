@@ -71,7 +71,11 @@ scp tradesv3.sqlite root@[enter\_your\_ip\_here]:/root/.freqtrade
 Finally go back to your Vultr terminal, it’s time for everything to come together. Run the following command
 
 ```bash
-docker run -d --name freqtrade -v /etc/localtime:/etc/localtime:ro -v ~/.freqtrade/config.json:/freqtrade/config.json -v ~/.freqtrade/user_data/:/freqtrade/user_data -v ~/.freqtrade/tradesv3.sqlite:/freqtrade/tradesv3.sqlite freqtrade --db-url sqlite:///tradesv3.sqlite
+docker run -d --name freqtrade -v /etc/localtime:/etc/localtime:ro 
+-v ~/.freqtrade/config.json:/freqtrade/config.json 
+-v ~/.freqtrade/user_data/:/freqtrade/user_data 
+-v ~/.freqtrade/tradesv3.sqlite:/freqtrade/tradesv3.sqlite 
+freqtrade --db-url sqlite:///tradesv3.sqlite
 ```
 
 If everything was done right, you should get a message on Telegram that your bot has started. Now it will start scanning the selected currencies for movements and buy and sell as appropriate.

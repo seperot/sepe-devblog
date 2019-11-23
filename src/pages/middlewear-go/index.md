@@ -35,7 +35,8 @@ So for example when I first built the handler for listen and serving http, I had
 func serveCoinValue(w http.ResponseWriter, r *http.Request) {
         Usd: "$" + priceCalculator.PriceCalc("USD", 
         priceCalculator.ExchangeOgre), 
-        coinval := coinValue{"$" + priceCalculator.PriceCalc("USD", priceCalculator.ExchangeOgre),
+		coinval := coinValue{"$" + priceCalculator.PriceCalc("USD", 
+		priceCalculator.ExchangeOgre),
         Btc: "₿" + priceCalculator.PriceCalc("BTC", 
         priceCalculator.ExchangeOgre), "₿" + 
         priceCalculator.PriceCalc("BTC", priceCalculator.ExchangeOgre)}
@@ -64,14 +65,16 @@ func handleEvent() http.HandlerFunc {
 
 		switch r.URL.Path {
 		case "/coin":
-			js, err = json.Marshal(price.Calc(price.TradeOgre, price.BtcFiatPrice, getjson.Map))
+			js, err = json.Marshal(price.Calc(price.TradeOgre, 
+			price.BtcFiatPrice, getjson.Map))
 		case "/weather":
 			lat := r.Header.Get("lat")
 			lon := r.Header.Get("lon")
 			if len(lat) <= 0 || len(lon) <= 0{
 				http.Error(w, "Missing Lat Lon Headers", http.StatusInternalServerError)
 			} else {
-				js, err = json.Marshal(weather.Getter(lat, lon, weather.OpenWeather, getjson.Map))
+				js, err = json.Marshal(weather.Getter(lat, lon, 
+				weather.OpenWeather, getjson.Map))
 			}
 		default:
 			w.WriteHeader(http.StatusNotFound)
