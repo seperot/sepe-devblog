@@ -70,7 +70,7 @@ const Article = styled.article`
     }
   }
 
-  code {
+  gatsby-highlight {
     border-left: 5px solid #e0e6ed;
     line-height: 1.7;
     margin: 15px 50px 15px 75px;
