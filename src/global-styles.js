@@ -68,26 +68,25 @@ injectGlobal`
   .gatsby-highlight {
     border-bottom: 1px solid #e0e6ed;
     border-top: 1px solid #e0e6ed;
-    margin: 15px -100px;
+    margin: 15px -300px;
     padding: 0;
 
     pre[class*="language-"] {
       margin: 0;
-      padding: 25px -300px;
+      padding: 25px -100px;
     }
   }
 
   pre[class*="language-"] {
     background: rgba(245, 245, 245, 1);
-    color: rgb(65, 76, 94);  
-    padding: 25px -300px;}
+    color: rgb(65, 76, 94);  }
 
   @media only screen and (max-width: 870px) {
     .gatsby-highlight {
       margin: 15px -15px;
 
       pre[class*="language-"] {
-        padding: 25px -300px;;
+        padding: 25px;
       }
     }
   }
