@@ -31,7 +31,8 @@ One thing I like about learning new languages is just trying things based on how
 
 So for example when I first built the handler for listen and serving http, I had set it up like this:
 
-```func serveCoinValue(w http.ResponseWriter, r *http.Request) {
+```golang
+func serveCoinValue(w http.ResponseWriter, r *http.Request) {
 		Usd: "$" + priceCalculator.PriceCalc("USD", priceCalculator.ExchangeOgre), coinval := coinValue{"$" + priceCalculator.PriceCalc("USD", priceCalculator.ExchangeOgre),
 		Btc: "₿" + priceCalculator.PriceCalc("BTC", priceCalculator.ExchangeOgre), "₿" + priceCalculator.PriceCalc("BTC", priceCalculator.ExchangeOgre)}
 
@@ -49,7 +50,8 @@ So for example when I first built the handler for listen and serving http, I had
 
 It worked, as in it passed json over, but there are some issues. Firstly if I want a handler for another call like weather I will have to make a second handler, secondly this call reacts to any call with this response with no thought about proper error handling. So with some googling and refactored to get this:
 
-```func handleEvent() http.HandlerFunc {
+```golang 
+func handleEvent() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		var (
 			js []byte

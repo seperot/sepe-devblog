@@ -44,19 +44,27 @@ The next important section of the config file for now is the <a href="https://te
 
 With that all done, the final step is to set this all up, <a href="https://www.vultr.com/?ref=8109640-4F" target="_blank">Vultr</a> is a server hosting which this referral code <a href="https://www.vultr.com/?ref=8109640-4F" target="_blank">https://www.vultr.com/?ref=8109640-4F</a> it gives you $50 free credit, the server we well be setting up is only $5 a month so that’s 10 months of free trading! Once you sign up and follow the instructions <a href="https://www.vultr.com/?ref=8109640-4F" target="_blank">Vultr</a> gives, it’s time to set up the server. Press Deploy new server and select <a href="https://www.vultr.com/?ref=8109640-4F" target="_blank">Vultr</a> Cloud Computing, choose the region you would prefer, select Ubuntu as the OS and 16.04 x64 as the version, selected the $5 25GB SSD as your server size. Once that’s all selected click deploy now and wait for <a href="https://www.vultr.com/?ref=8109640-4F" target="_blank">Vultr</a> so set it all up for you, this will take a few mins. Once it’s finished click on the server name and click on the view console icon at the top left and log in. There is going to be a series of commands here to get things setup so just type them in one at a time.
 
-`apt-get update
-apt-get install docker-ce
-systemctl enable docker
-docker pull freqtradeorg/freqtrade:develop
-docker tag freqtradeorg/freqtrade:develop freqtrade
-docker build -t freqtrade .
-docker build -f ./Dockerfile.develop -t freqtrade-dev .
-mkdir ~/.freqtrade
-cd ~/.freqtrade
-mkdir user_data`
+`apt-get update`
+
+`apt-get install docker-ce`
+
+`systemctl enable docker`
+
+`docker pull freqtradeorg/freqtrade:develop`
+
+`docker tag freqtradeorg/freqtrade:develop freqtrade`
+
+`docker build -t freqtrade .`
+
+`docker build -f ./Dockerfile.develop -t freqtrade-dev .`
+
+`mkdir ~/.freqtrade`
+
+`cd ~/.freqtrade`
+
+`mkdir user_data`
 
 Once that step is done we need to transfer the config file to the new folder. There is a few different ways to do this, the simplest for most users is to ssh move the file. To do this, open up a command line terminal, navigate to the folder you saved the config.json file and get the ip address of your Vultr server ready and enter the flooring
-
 
 `scp config.json root@[enter\_your\_ip\_here]:/root/.freqtrade`
 
