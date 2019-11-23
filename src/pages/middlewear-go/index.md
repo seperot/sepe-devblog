@@ -3,7 +3,7 @@ title: Making a middleware API layer in GO
 date: "2019-11-21"
 featuredImage: './images/gopherbig.png'
 ---
-(TurtleWare 2.0 pt1)
+How to teach yourself a new language and the advantages of a middleware API (TurtleWare 2.0 pt1)
 <!-- end -->
 
 ###History time
@@ -57,7 +57,8 @@ It worked, as in it passed json over, but there are some issues. Firstly if I wa
 
 ```go
 func handleEvent() http.HandlerFunc {
-	return func(w http.ResponseWriter, r *http.Request) {
+	return func(w http.ResponseWriter, 
+	r *http.Request) {
 		var (
 			js []byte
 			err error
@@ -66,12 +67,14 @@ func handleEvent() http.HandlerFunc {
 		switch r.URL.Path {
 		case "/coin":
 			js, err = json.Marshal(price.Calc(price.TradeOgre, 
-			price.BtcFiatPrice, getjson.Map))
+			price.BtcFiatPrice, 
+			getjson.Map))
 		case "/weather":
 			lat := r.Header.Get("lat")
 			lon := r.Header.Get("lon")
 			if len(lat) <= 0 || len(lon) <= 0{
-				http.Error(w, "Missing Lat Lon Headers", 
+				http.Error(w, 
+				"Missing Lat Lon Headers", 
 				http.StatusInternalServerError)
 			} else {
 				js, err = json.Marshal(weather.Getter(lat, lon, 
@@ -80,10 +83,6 @@ func handleEvent() http.HandlerFunc {
 		default:
 			w.WriteHeader(http.StatusNotFound)
 			_ , err = w.Write([]byte(`{"error": "nothing found"}`))
-		}
-
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
 
 		switch r.Method {
@@ -95,18 +94,45 @@ func handleEvent() http.HandlerFunc {
 			w.WriteHeader(http.StatusNotFound)
 			_ , err = w.Write([]byte(`{"error": "nothing found"}`))
 		}
+
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+		}
 	}
 }
 ```
 This allows to have a single error handler that handles different calls and gives the correct response, passes errors and is easy to call or mock out for tests.
 
-Another important thing when learning a language is to avoid 3rd party libraries where possible. While Gorilla Mux makes taking complicated handlers and routers easier and setting everything to work as a lambda function is really cool, you won't really understand the problem they fix if you use them from the very beginning.
+Another important thing when learning a language is to avoid 3rd party libraries where possible. While Gorilla Mux makes making complicated handlers and routers easier and setting everything to work as a lambda function is really cool, you won't really understand the problem they fix if you use them from the very beginning.
 
-(Testing picture)
-Writing and covering your project in tests is a great way to refine your knowledge and improve your code. While TDD/BDD is great for languages you are comfortable in, when learning a new language building your unit tests after you've built your project works better.
+###Test all the things
+![Testing](./images/testing.png)
+Writing and covering your project in tests is a great way to refine your knowledge and improve your code. While TDD/BDD is great for languages you are comfortable in, when learning a new language building your unit tests after you've built your project works better. Writing tests for something you can't even conceptualize is really hard and could triple the time before you get that first "it works!" moment. If you write the tests after you have that moment then you can refactor that code down to work with the tests and learn mistakes you made earlier on. I think doing it this way really gives you an appreciation of how unit tests can help you write better code as well as make sure it's working before it goes to production.
 
-Compounds learning
-Fails are Demotivating
+Writing tests in go is also super simple, by passing functions in your code you can create mock versions easily in your tests, like below:
 
+```go
+func TestOpenWeather(t *testing.T) {
+result, result2 := OpenWeather("12", "12", testJsonRetriever)
+if result != "test" || result2 != "47" {
+	t.Error("OH NO")
+}
+}
+
+func testJsonRetriever(fullUrl string, 
+client *http.Client) map[string]interface{} {
+	stubbedResponse := []byte(`{"weather": [{"main": "test"}, 
+	{"main": "fail"}],
+	"main": {"temp": 47}}`)
+	var result map[string]interface{}
+	jsonErr := json.Unmarshal(stubbedResponse, &result)
+	if jsonErr != nil {
+		log.Fatal(jsonErr)
+	}
+	return result
+}
+```
+
+Summary and links
 
 ![Middleware flow](./images/flowmap.png)
