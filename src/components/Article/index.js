@@ -70,7 +70,7 @@ const Article = styled.article`
     }
   }
 
-  gatsby-highlight {
+  div class="gatsby-highlight" {
     border-left: 5px solid #e0e6ed;
     line-height: 1.7;
     margin: 15px 50px 15px 75px;
@@ -80,7 +80,7 @@ const Article = styled.article`
       margin: 0;
     }
   }
-
+  
   ul,
   ol {
     line-height: 1.7;
