@@ -79,14 +79,15 @@ injectGlobal`
 
   pre[class*="language-"] {
     background: rgba(245, 245, 245, 1);
-    color: rgb(65, 76, 94);  }
+    color: rgb(65, 76, 94);  
+    padding: 25px -300px;}
 
   @media only screen and (max-width: 870px) {
     .gatsby-highlight {
       margin: 15px -15px;
 
       pre[class*="language-"] {
-        padding: 25px;
+        padding: 25px -300px;;
       }
     }
   }
