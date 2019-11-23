@@ -71,7 +71,8 @@ func handleEvent() http.HandlerFunc {
 			lat := r.Header.Get("lat")
 			lon := r.Header.Get("lon")
 			if len(lat) <= 0 || len(lon) <= 0{
-				http.Error(w, "Missing Lat Lon Headers", http.StatusInternalServerError)
+				http.Error(w, "Missing Lat Lon Headers", 
+				http.StatusInternalServerError)
 			} else {
 				js, err = json.Marshal(weather.Getter(lat, lon, 
 				weather.OpenWeather, getjson.Map))
