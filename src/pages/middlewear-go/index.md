@@ -33,8 +33,12 @@ So for example when I first built the handler for listen and serving http, I had
 
 ```go
 func serveCoinValue(w http.ResponseWriter, r *http.Request) {
-		Usd: "$" + priceCalculator.PriceCalc("USD", priceCalculator.ExchangeOgre), coinval := coinValue{"$" + priceCalculator.PriceCalc("USD", priceCalculator.ExchangeOgre),
-		Btc: "₿" + priceCalculator.PriceCalc("BTC", priceCalculator.ExchangeOgre), "₿" + priceCalculator.PriceCalc("BTC", priceCalculator.ExchangeOgre)}
+        Usd: "$" + priceCalculator.PriceCalc("USD", 
+        priceCalculator.ExchangeOgre), 
+        coinval := coinValue{"$" + priceCalculator.PriceCalc("USD", priceCalculator.ExchangeOgre),
+        Btc: "₿" + priceCalculator.PriceCalc("BTC", 
+        priceCalculator.ExchangeOgre), "₿" + 
+        priceCalculator.PriceCalc("BTC", priceCalculator.ExchangeOgre)}
 
 	js, err := json.Marshal(coinval)
 	if err != nil {
