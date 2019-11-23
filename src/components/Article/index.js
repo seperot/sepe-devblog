@@ -69,7 +69,6 @@ const Article = styled.article`
       margin: 0;
     }
   }
-
   
   ul,
   ol {
