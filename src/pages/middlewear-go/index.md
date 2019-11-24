@@ -107,6 +107,7 @@ Another important thing when learning a language is to avoid 3rd party libraries
 
 ###Test all the things
 ![Testing](./images/testing.png)
+
 Writing and covering your project in tests is another great way to refine your knowledge and improve your code. While TDD/BDD is great for languages you are comfortable in, when learning a new language, building your unit tests after you've built your project works better. Writing tests for something you can't even conceptualize is really hard and could triple the time before you get that first "it works!" moment. If you write the tests after you have that moment then you can refactor that code down to work with the tests and learn mistakes you made earlier on. As an added bonus, I think doing it this way when learning really gives you an appreciation of how unit tests can help you write better code and make sure it's working before it goes to production.
 
 Writing tests in go is also super simple, by passing functions in your code you can create mock versions easily in your tests, like below:
