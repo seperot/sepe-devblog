@@ -28,7 +28,7 @@ class BlogPostTemplate extends React.Component {
     }
 
     return (
-      <Layout slug={data.markdownRemark.fields.slug}>
+      <Layout>
         <Container>
           <Helmet
             title={`${post.frontmatter.title} | ${author}`}
