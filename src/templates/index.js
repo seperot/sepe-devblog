@@ -69,7 +69,6 @@ const Layout = ({ slug, children }) => (
           content={`${data.site.siteMetadata.siteUrl}${slug}twitter-card.jpg`}
         />
       </Helmet>
-      { /* ... */ }
     )}
   />
 );
