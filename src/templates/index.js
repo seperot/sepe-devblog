@@ -11,18 +11,6 @@ import Pagination from '../components/Pagination';
 import Summary from '../components/Summary';
 
 const Layout = ({ slug, children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-            siteUrl
-          }
-        }
-      }
-    `}
-    render={data => (
       <Helmet title={data.site.siteMetadata.title}>
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -30,8 +18,6 @@ const Layout = ({ slug, children }) => (
           content={`${data.site.siteMetadata.siteUrl}${slug}twitter-card.jpg`}
         />
       </Helmet>
-    )}
-  />
 );
 
 const IndexPage = ({ pageContext }) => {
