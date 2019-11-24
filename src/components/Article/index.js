@@ -69,7 +69,7 @@ const Article = styled.article`
       margin: 0;
     }
   }
-
+  
   ul,
   ol {
     line-height: 1.7;
