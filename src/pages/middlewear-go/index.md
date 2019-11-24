@@ -29,7 +29,7 @@ History lesson aside, why build a middleware API?
 
 One thing I like about learning new languages is just trying things based on how I think it will work, getting it wrong, looking up how to make it work, and finally fixing it. It’s great as you go through your project as you will find you will get more and more right as you work through it.
 
-So for example when I first built the handler for listen and serving http, I had set it up like this:
+So for example when I first built the handler for listening and serving Http, I had set it up like this:
 
 ```go
 func serveCoinValue(w http.ResponseWriter, r *http.Request) {
@@ -53,7 +53,7 @@ func serveCoinValue(w http.ResponseWriter, r *http.Request) {
     }
 ```
 
-It worked, as in it passed json over, but there are some issues. Firstly if I want a handler for another call like weather I will have to make a second handler, secondly this call reacts to any call with this response with no thought about proper error handling. So with some googling and refactored to get this:
+It worked, as in it passed JSON over, but there are some issues. Firstly if I want a handler for another call like weather I will have to make a second handler, secondly this call reacts to any call with this response with no thought about proper error handling. So with some googling and refactored to get this:
 
 ```go
 func handleEvent() http.HandlerFunc {
@@ -133,6 +133,9 @@ client *http.Client) map[string]interface{} {
 }
 ```
 
-Summary and links
-
+###Finishing up
 ![Middleware flow](./images/flowmap.png)
+
+The end result for me was a nice little 350ish line Golang project. Which [you can check out the code for here](https://github.com/seperot/turtle-wear-api) or if your interested in seeing it working [you can use the swagger doc here](https://app.swaggerhub.com/apis-docs/ijhdev/turtle-wear-api/1.0.0). I would love to get feedback on ways to improve what's here or why I'm wrong.
+
+This is part 1 of a 3 part blog talking about making version 2 of the watch app. In part 2, I will be going into the WearOS and Kotlin work of the watch app. Part 3 will be about containerizing, automating and deploying everything.
