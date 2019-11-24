@@ -28,7 +28,7 @@ class BlogPostTemplate extends React.Component {
     }
 
     return (
-      <Layout>
+      <Layout slug={data.markdownRemark.fields.slug}>
         <Container>
           <Helmet
             title={`${post.frontmatter.title} | ${author}`}
@@ -76,10 +76,6 @@ class BlogPostTemplate extends React.Component {
     );
   }
 }
-
-export default ({ data }) => {
-  return <Layout slug={data.markdownRemark.fields.slug}>{/* ... */}</Layout>;
-};
 
 export default BlogPostTemplate;
 
