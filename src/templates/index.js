@@ -3,22 +3,12 @@ import React from 'react';
 
 import userConfig from '../../config';
 
-//import Layout from './layout';
+import Layout from './layout';
 
 import Card from '../components/Card';
 import Container from '../components/ContainerHome';
 import Pagination from '../components/Pagination';
 import Summary from '../components/Summary';
-
-const Layout = ({ slug, children }) => (
-      <Helmet title={data.site.siteMetadata.title}>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:image"
-          content={`${data.site.siteMetadata.siteUrl}${slug}twitter-card.jpg`}
-        />
-      </Helmet>
-);
 
 const IndexPage = ({ pageContext }) => {
   const { group, index, pageCount } = pageContext;
