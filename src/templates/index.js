@@ -48,4 +48,30 @@ const IndexPage = ({ pageContext }) => {
     </Layout>
   );
 };
+
+const Layout = ({ slug, children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+            siteUrl
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Helmet title={data.site.siteMetadata.title}>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
+          content={`${data.site.siteMetadata.siteUrl}${slug}twitter-card.jpg`}
+        />
+      </Helmet>
+      { /* ... */ }
+    )}
+  />
+);
+
 export default IndexPage;

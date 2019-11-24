@@ -77,6 +77,10 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
+export default ({ data }) => {
+  return <Layout slug={data.markdownRemark.fields.slug}>{/* ... */}</Layout>;
+};
+
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
