@@ -34,6 +34,14 @@ class BlogPostTemplate extends React.Component {
             title={`${post.frontmatter.title} | ${author}`}
             htmlAttributes={{ lang: 'en' }}
           >
+            <meta 
+              name="twitter:card" 
+              content="summary_large_image" 
+            />
+            <meta 
+              name="twitter:image"
+              content={`${post.frontmatter.siteUrl}${post.id}twitter-card.jpg`} 
+            />
             <meta
               name="description"
               content={`${userConfig.title} | ${userConfig.description}`}

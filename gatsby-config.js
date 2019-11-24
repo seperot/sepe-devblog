@@ -37,6 +37,7 @@ module.exports = {
             },
           },
           'gatsby-remark-prismjs',
+          `gatsby-remark-social-cards`,
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],

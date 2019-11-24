@@ -48,4 +48,5 @@ const IndexPage = ({ pageContext }) => {
     </Layout>
   );
 };
+
 export default IndexPage;
