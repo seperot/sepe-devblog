@@ -8,6 +8,22 @@ export default class HTML extends React.Component {
       <html {...this.props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
+          <meta 
+            name="twitter:card" 
+            content="summary_large_image" 
+          />
+          <meta 
+            name="twitter:site" 
+            content="@ijhdev"
+          />
+          <meta 
+              name="twitter:title" 
+              content={"IJHDev, blog of a rambling tech lead"}
+          />
+          <meta 
+            name="twitter:image"
+            content={`twitter-card.png`} 
+          />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
             name="viewport"
