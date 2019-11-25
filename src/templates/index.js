@@ -25,8 +25,16 @@ const IndexPage = ({ pageContext }) => {
             content="summary_large_image" 
           />
           <meta 
+            name="twitter:site" 
+            content="@ijhdev"
+          />
+          <meta 
+              name="twitter:title" 
+              content={`${userConfig.title}`}
+          />
+          <meta 
             name="twitter:image"
-            content={`${node.frontmatter.siteUrl}${node.id}twitter-card.jpg`} 
+            content={`twitter-card.png`} 
           />
           <meta
             name="description"
