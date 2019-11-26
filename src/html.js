@@ -22,7 +22,7 @@ export default class HTML extends React.Component {
           />
           <meta 
             name="twitter:image"
-            content={`twitter-card.png`} 
+            content={"https://ijh.dev/twitter-card.png"}
           />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta

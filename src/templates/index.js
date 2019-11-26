@@ -20,6 +20,22 @@ const IndexPage = ({ pageContext }) => {
         <Helmet
           title={`${userConfig.title} | ${userConfig.author}`}
         >
+          <meta 
+            name="twitter:card" 
+            content="summary_large_image" 
+          />
+          <meta 
+            name="twitter:site" 
+            content="@ijhdev"
+          />
+          <meta 
+              name="twitter:title" 
+              content={"IJHDev, blog of a rambling tech lead"}
+          />
+          <meta 
+            name="twitter:image"
+            content={"https://ijh.dev/twitter-card.png"}
+          />
           <meta
             name="description"
             content={`${userConfig.title} | ${userConfig.description}`}
