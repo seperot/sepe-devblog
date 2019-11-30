@@ -34,7 +34,7 @@ const IndexPage = ({ pageContext }) => {
           />
           <meta 
             name="twitter:image"
-            content={"https://ijh.dev/twitter-card.png"}
+            content={"src/twitter-card.png"}
           />
           <meta
             name="description"
