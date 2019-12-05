@@ -58,7 +58,7 @@ The inner class Engine has a lot more moving parts but some bits to consider are
 This should be familiar to anyone who has made an Android app, this is where your android.intent.action.MAIN and android.intent.category.LAUNCHER is set to on the manifest. In this case, it will be the launch point for the settings app.
 
 ###Setting up the simulator
-![Watch](./images/trtlwear.png)
+![Watch](./images/simulator.png)
 
 There are a few catches with working on wearOS apps, especially with a watch face. The first being the standard configuration. This will always finish building with the settings app open, which if you are working on watch face changes is a bit annoying. It’s better to have this as the configuration settings.
 
@@ -82,7 +82,7 @@ adb connect 127.0.0.1:4444
 Now your wearable should be connected and ready to use
 
 ###Manifest settings
-![Watch](./images/trtlwear.png)
+![Watch](./images/manifest.png)
 
 With making a wearable app and specifically a watch face there are some permissions you need to have set in the manifest they are:
 
@@ -171,7 +171,7 @@ android:usesCleartextTraffic="true”
 ```
 
 ###Drawing the watch face
-![Watch](./images/trtlwear.png)
+![Watch](./images/watchface.png)
 
 If you check most places for how to draw the watch face, you will generally see very large OnDraw functions that require canvas drawing. I instead prefer to use xml layouts in the same way you would with an android application. This is a little less efficient but a lot more readable code in my opinion. To set this up first have a lateinit View outside the engine. Then on the OnCreate you inflate it like this:
 
@@ -210,5 +210,10 @@ private fun setTimeandDate() {
 ```
 
 ###Finishing it up and launching
-![Watch](./images/trtlwear.png)
-Link to CI/CD mobile blog
+![Watch](./images/launch.png)
+
+That's mostly in terms of the tricky bits of getting the Turtle wear v2 up and running. The Google play store takes submissions to it just the same as it would an Android app.
+
+* [You can check the github repo here](https://github.com/seperot/turtle-wear)
+* [You can download the watch face here](https://play.google.com/store/apps/details?id=uk.co.ijhdev.trtlware&hl=en)
+* If your interested in taking your build further with a CI/CD pipeline, [I've got a blog post all about how to set one up here](https://ijh.dev/mobile-ci-cd)
