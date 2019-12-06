@@ -1,9 +1,9 @@
 ---
-title: Trials of a WearOS Watch face 
-date: "2019-11-30"
+title: Building a WearOS Watch face 
+date: "2019-12-05"
 featuredImage: './images/trtlwearbig.png'
 ---
-Making a wearOS watch face shouldn't be this much of a faff Google! (TurtleWare 2.0 pt2)
+Making a wearOS watch face and avoiding some of the faff. (TurtleWare 2.0 pt2)
 <!-- end -->
 
 This is part 2 of a 3 part blog post about making v2 of turtle wear watch face. [You can check out part 1 here](https://ijh.dev/middlewear-go)
@@ -11,7 +11,7 @@ This is part 2 of a 3 part blog post about making v2 of turtle wear watch face. 
 ###Starting the project off
 ![Watch](./images/trtlwear.png)
 
-Starting off, WearOS is the same as Android for 99% of things. Meaning you can write this in Kotlin (or Java if you love some boilerplate) and use all the same Android libraries. So for folder structures and initializing the project can be done in Android Studio just like you would a phone app. For Turtle Wear 2.0, there are two important entry points. The CanvasWatchFaceService and the MainActivity.
+Starting off, WearOS is the same as Android for 99% of things. Meaning you can write the app Kotlin (or Java if you love some boilerplate) and use all the same Android libraries. So for folder structures and initializing the project can be done in Android Studio just like you would a phone app. For Turtle Wear 2.0, there are two important entry points. The CanvasWatchFaceService and the MainActivity.
 
 ####CanvasWatchFaceService
 The CanvasWatchFaceService is the place where you run all the watch face visuals. You set an inner class that contains a CanvasWatchFaceService.Engine() which deals with refresh speeds, ambient and active visuals, and custom tap commands. The CanvasWatchFaceService is pretty standard and should look something like the below:
@@ -46,7 +46,7 @@ class TurtleFace : CanvasWatchFaceService() {
   }
 ```
 
-The inner class Engine has a lot more moving parts but some bits to consider are:
+The inner class Engine has a lot more moving parts, but some bits to consider are:
 
 * __Standard Android lifecycle events__ - So you can deal with the watch face starting, going into the background and being stopped when changed
 * __onAmbientModeChanged__ - This is where you can control what you show and hide when the user is actively looking at the watch or not.
@@ -60,17 +60,17 @@ This should be familiar to anyone who has made an Android app, this is where you
 ###Setting up the simulator
 ![Watch](./images/simulator.png)
 
-There are a few catches with working on wearOS apps, especially with a watch face. The first being the standard configuration. This will always finish building with the settings app open, which if you are working on watch face changes is a bit annoying. It’s better to have this as the configuration settings.
+There are a few catches with working on wearOS apps when it comes to debugging, especially with a watch face. The first being the standard configuration. This will always finish building with the settings app open, which if you are working on watch face changes is a bit annoying. It’s better to have this as the configuration settings.
 
 ![configSettings](./images/wearconfig.png)
 
-This way the app will build but nothing will change on the device or simulator. Next is setting up devices to debug the build on. I’ll break down both options:
+This way the app will build but nothing will change on the device or simulator. Next is setting up devices to debug the build on. There are two options here:
 
 ####Simulator
-Open up the Android Virtual Device Manager for this and select create a new virtual device at the bottom. Choose a WearOS as your hardware, Select Pie as the system image but don’t select the Chinese version unless you specifically want that, everything else is fine on default so you can click finish.
+Open up the Android Virtual Device Manager for this and select "create a new virtual device" at the bottom. Choose WearOS as your hardware, Select Pie as the system image but don’t select the Chinese version unless you specifically want that, everything else is fine on default so you can click finish.
 
 ####Device
-For this method, you should have an Android phone or tablet connected to your workstation already. Make sure it got developer settings enabled and has allowed your workstation access. You will also need the Wear OS app installed on that device and bluetooth connected to the wearable.
+For this method, you should have an Android phone or tablet connected to your workstation already. Make sure it's got developer settings enabled and has allowed your workstation access. You also need the Wear OS app installed on that device and Bluetooth connected to the wearable.
 
 Open the WearOS app on the Android device and scroll to the bottom where advanced settings are, at the bottom here is “Debugging over Bluetooth”. Turn that on and you should get “Host: Disconnected Target: Connected”. Once that’s done go into terminal and enter the following commands:
 
@@ -79,29 +79,29 @@ adb forward tcp:4444 localabstract:/adb-hub
 adb connect 127.0.0.1:4444
 ```
 
-Now your wearable should be connected and ready to use
+Now your wearable should be fully connected and ready to debug
 
 ###Manifest settings
 ![Watch](./images/manifest.png)
 
-With making a wearable app and specifically a watch face there are some permissions you need to have set in the manifest they are:
+When making a wearable app and specifically a watch face, there are some permissions you need to have set in the manifest. They are:
 
-#####Required for any of this to work on a wearable
+#####Required for any of this to work on a wearable.
 ```xml
 <uses-feature android:name="android.hardware.type.watch" />
 ```
-#####Required to act as a custom watch face
+#####Required to act as a custom watch face.
 ```xml
 <uses-permission android:name="android.permission.WAKE_LOCK" />
 ```
-#####Required for complications to receive complication data and open the provider chooser
+#####Required for complications to receive complication data and open the provider chooser.
 ```xml
 <uses-permission 
 android:name="com.google.android.wearable.permission.RECEIVE_COMPLICATION_DATA"
 />
 ```
 
-Next one and another set most apps will likely need is internet access, you will likely also need Bluetooth access if you want to communicate with the connected device
+Another set most apps will likely need is internet access, you will likely also need Bluetooth access as part of this if you want to communicate with the connected device.
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -109,13 +109,13 @@ Next one and another set most apps will likely need is internet access, you will
 <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 ```
 
-Slightly less important is location services, Turtle wear needs this information to get weather data for your location
+Slightly less important is location services, Turtle wear needs this information to get weather data for your location.
 ```xml
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
 
-For our CanvasWatchFaceService, we need to declare it specifically as a watch face. So we start by flagging it as a service and giving it a specific Bind Wallpaper permission
+For the CanvasWatchFaceService, it need to be declared specifically as a watch face. So we start by flagging it as a service and giving it the Bind Wallpaper permission.
 
 ```xml
 <service
@@ -124,7 +124,7 @@ android:label="@string/my_name"
 android:permission="android.permission.BIND_WALLPAPER">
 ```
 
-Next, we set up the metadata for the watch face and what the watch face example screen will look like on a square and circular screen type. The examples are used when the user selects the watch face from the selection screen
+Next, we set up the metadata for the watch face and what the watch face example screen looks like on a square and circular screen type. The examples are used when the user selects the watch face from the selection screen.
 
 ```xml
 <meta-data
@@ -138,7 +138,7 @@ android:name="com.google.android.wearable.watchface.preview_circular"
 android:resource="@drawable/preview_digital_circular" />
 ```
 
-The last part is identifying it as a watch face
+The last part is identifying it as a watch face.
 
 ```xml
 <intent-filter>
@@ -181,7 +181,7 @@ getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 watchLayout = inflater.inflate(R.layout.watchface, null)
 ```
 
-With the view now inflated, you can set it up with the screen dimensions on the OnDraw like below
+With the view now inflated, you can set it up with the screen dimensions on the OnDraw like below.
 
 ```java
 watchLayout.measure(specW, specH)
