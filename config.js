@@ -6,7 +6,7 @@ module.exports = {
   primaryColor: '#00645C', // Required
   showHeaderImage: true,
   showShareButtons: true,
-  postsPerPage: 5, // Required
+  postsPerPage: 6, // Required
   social: {
     website: 'mailto:me@ijh.dev',
     github: 'https://github.com/seperot',
