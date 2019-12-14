@@ -21,10 +21,20 @@ The first thing is for them to check they have all the hardware they will need.
 * Do they need access to devices they need for debugging? 
 * Is their any accessability items they don't know they can ask for?
 
-Next is software, same deal but this time 
- what do you need to do the job, hardware software etc
-Then move to access so they can make sure they can progress early
-Then go into how you write code, any specifics on a team style, headers they need set and even rules like TDD and unit test coverage.
+Next is software, same deal as hardware but this time what they need to get the job done. This also included pulling down the codebase they will be working on.
+Finally make sure all their access and permissions needed are sorted as well, any cloud platforms or tools like Jira they need logins for are ready for them to use.
+
+__*Code rules and opinions*__
+With the basics out the way, the next thing to do is write as much down on the coding standards you use.
+* Camel case, Delimiter space, Hungarian notation or whatever naming style the team uses
+* If you use multiple languages then anything unique to each of them
+* WHere you set strings, colours, and sizes
+* 2 spaces, 4 spaces or tabs
+* Class and folder structure
+* If you do TDD, or what the test coverage percentage needs to be
+
+__*How the work process works*__
+
 Then go into how to grab work, explain your teams way of being agile. Do you use Kanban, Scrum, who needs to do what when a ticket moves?
 Next how your pull requests work, do you have rules on size? Do you need certain things put into the description for automated pipelines? Rules about comments and when to take them to a conversation
 Finally how to release the code, What to do when the PR is done, how to get it to live. Do they need to make release notes?
