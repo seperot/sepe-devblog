@@ -32,18 +32,24 @@ So for Christmas this year I made a smart mirror as a gift. I wanted something t
 ![Bot](./images/bot.png)
 
 [We will be using MagicMirror²](https://github.com/MichMich/MagicMirror) for this build
+https://github.com/MichMich/MagicMirror/wiki/Auto-Starting-MagicMirror
+[For music we can use Raspotify](https://github.com/dtcooper/raspotify) for music
+HDMI boost config
+https://github.com/dtcooper/raspotify/issues/174
+
 Installation
 ![Screen front](./images/screenfront.jpg)
 ![Screen back](./images/screenback.jpg)
 ![checking size](./images/makingsureitfits.jpg)
 ![test run](./images/testrunnomirror.jpg)
+
 3rd part plugins
 Google assistant setup
 
 ###Assembling
 ![Bot](./images/bot.png)
 
-###It's alive
+###It's working
 ![Bot](./images/bot.png)
-
-Youtube video of it running
+![alive](./images/mirrorworking.jpg)
+![wrapped up](./images/wrappedup.jpg)
