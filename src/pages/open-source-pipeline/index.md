@@ -1,6 +1,6 @@
 ---
 title: Golang automated pipeline
-date: "2019-12-09"
+date: "2019-11-09"
 featuredImage: './images/goline.jpg'
 ---
 A guide to building a simple pipeline from PR to deploy with a scalable solution. (TurtleWare 2.0 pt3)
