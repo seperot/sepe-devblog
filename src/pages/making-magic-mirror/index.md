@@ -1,15 +1,15 @@
 ---
 title: Making a Smart Mirror
-date: "2020-01-01"
-featuredImage: './images/simplebot.jpg'
+date: "2020-02-10"
+featuredImage: './images/mirrormain.jpg'
 ---
-A smart mirror with google assistant makes for a cool gift
+A smart mirror build with spotify added in
 <!-- end -->
 
-So for Christmas this year I made a smart mirror as a gift. I wanted something that was functional as a mirror but also cool and with handy extras like USB charge ports and music.
+So for a challenge, I wanted to try and make a Smart Mirror. I wanted to make it functional as a mirror but also cool and with handy extras like USB charge ports and music.
 
-###Things you will need
-![Bot](./images/bot.png)
+###Things needed
+![Bot](./images/todolist.png)
 
 * __*A screen:*__ I pulled the one I am working with from an old Samsung laptop. You can find controller units on Amazon or Ebay that turn it into standard monitor with ports and controls. Or you can take out the screen from any monitor really.
 ![Screen](./images/screen.jpg)
@@ -17,8 +17,6 @@ So for Christmas this year I made a smart mirror as a gift. I wanted something t
 ![raspberry pi](./images/raspberrypi.jpg)
 * __*A Speaker:*__ If your going to use things like Google assistant and may play music from it you need to have at least a passable speaker connected.
 ![Speaker](./images/speaker.jpg)
-* __*A Microphone:*__ You can go for a cheap option here, So long as the google assistant can hear what your saying then it's fine
-![Microphone](./images/microphone.jpg)
 * __*A USB Hub:*__ This helps power your Pi and Speakers so you won't need a million cables coming out the back of the mirror
 ![usb hub](./images/usbhub.jpg)
 * __*A Mirror:*__ The mirror I'm working with is a dressing table mirror but you can use just about anything.
@@ -29,27 +27,35 @@ So for Christmas this year I made a smart mirror as a gift. I wanted something t
 
 
 ###Setting up the Pie
-![Bot](./images/bot.png)
+![Bot](./images/pie.png)
 
-[We will be using MagicMirror²](https://github.com/MichMich/MagicMirror) for this build
-https://github.com/MichMich/MagicMirror/wiki/Auto-Starting-MagicMirror
-[For music we can use Raspotify](https://github.com/dtcooper/raspotify) for music
-HDMI boost config
-https://github.com/dtcooper/raspotify/issues/174
+[We will be using MagicMirror²](https://github.com/MichMich/MagicMirror) for this build, make sure to read up on how to auto start the mirror too [here.](https://github.com/MichMich/MagicMirror/wiki/Auto-Starting-MagicMirror) 
 
-Installation
+Initially, I had planned on using Google assistant but as the build started Google deprecated the usage so instead to make sure we can have
+[music we can use Raspotify](https://github.com/dtcooper/raspotify) for music, this had a bit of an issue with the HDMI so make sure you check out this if you have the same problem [HDMI boost config](https://github.com/dtcooper/raspotify/issues/174)
+
+Honestly once they are working it was smooth sailing!
+
+###Installation
+![Bot](./images/installation.png)
+
+First I made sure the screen fit into the wood I had cut out. Made sure to use tape to seal any extra light from things like the pie showing up mirror side.
 ![Screen front](./images/screenfront.jpg)
+
+
+Also useful for securing it in place
 ![Screen back](./images/screenback.jpg)
+
+
+Next I made sure everything was going to fit and cut holes for all the items to be accessible from the back
 ![checking size](./images/makingsureitfits.jpg)
+
+
+Finally I turned it all on without the new glass in to make sure it was working.
 ![test run](./images/testrunnomirror.jpg)
 
-3rd part plugins
-Google assistant setup
 
-###Assembling
-![Bot](./images/bot.png)
+###All Done
+![Bot](./images/working.png)
 
-###It's working
-![Bot](./images/bot.png)
 ![alive](./images/mirrorworking.jpg)
-![wrapped up](./images/wrappedup.jpg)
