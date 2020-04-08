@@ -1,6 +1,6 @@
 ---
 title: Building a WearOS Watch face 
-date: "2019-10-15"
+date: "2019-11-18"
 featuredImage: './images/trtlwearbig.png'
 ---
 Making a wearOS watch face and avoiding some of the faff. (TurtleWare 2.0 pt2)

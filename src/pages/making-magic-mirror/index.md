@@ -1,6 +1,6 @@
 ---
 title: Making a Smart Mirror
-date: "2020-02-10"
+date: "2019-10-10"
 featuredImage: './images/mirrormain.jpg'
 ---
 A smart mirror build with spotify added in
@@ -12,16 +12,28 @@ So for a challenge, I wanted to try and make a Smart Mirror. I wanted to make it
 ![Bot](./images/todolist.png)
 
 * __*A screen:*__ I pulled the one I am working with from an old Samsung laptop. You can find controller units on Amazon or Ebay that turn it into standard monitor with ports and controls. Or you can take out the screen from any monitor really.
+
+
 ![Screen](./images/screen.jpg)
-* __*A raspberry Pi:*__ Pretty standard, the one in this build is a Raspberry Pi 3 Model B+ but I think you can get away with older models, just don't select a Raspberry Pi Zero as it's not got enough power to run everything
+* __*A raspberry Pi:*__ Pretty standard, the one in this build is a Raspberry Pi 3 Model B+ but I think you can get away with older models, just don't select a Raspberry Pi Zero as it's not got enough power to run everything.
+
+
 ![raspberry pi](./images/raspberrypi.jpg)
-* __*A Speaker:*__ If your going to use things like Google assistant and may play music from it you need to have at least a passable speaker connected.
+* __*A Speaker:*__ If your going to play music from it you need to have at least a passable speaker connected.
+
+
 ![Speaker](./images/speaker.jpg)
-* __*A USB Hub:*__ This helps power your Pi and Speakers so you won't need a million cables coming out the back of the mirror
+* __*A USB Hub:*__ This helps power your Pi and Speakers so you won't need a million cables coming out the back of the mirror.
+
+
 ![usb hub](./images/usbhub.jpg)
 * __*A Mirror:*__ The mirror I'm working with is a dressing table mirror but you can use just about anything.
+
+
 ![Mirror](./images/mirrorframe.jpg)
-* __*Tools and Materials to put it together:*__ For this build I used wood to build a backing area where I could place everything nicely but you can do whatever is best for your setup
+* __*Tools and Materials to put it together:*__ For this build I used wood to build a backing area where I could place everything nicely but you can do whatever is best for your setup. For the front I got a 2 way plastic mirror on Amazon that was close enough to the right size it just needed a bit of a trim on the edges
+
+
 ![Materials](./images/materials.jpg)
 * __*Cables to connect everything together:*__ HDMI Cable, USB to micro usb cables, male to male audio cable, power cable for the monitor all needed.
 
