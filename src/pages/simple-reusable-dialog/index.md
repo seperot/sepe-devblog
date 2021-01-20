@@ -9,7 +9,7 @@ A small native Android/Kotlin library that helps build dialogs with however many
 #What is it
 ![Bot](./images/dialogsmol.png)
 
-Android dialogs can be a bit of a faffy affair, this small lib gives you a range of customability while staying native so a lower risk of compatability issues down the road.
+Android dialogs can be a bit of a faffy affair, this small lib gives you a range of customizability while staying native so a lower risk of compatibility issues down the road.
 
 ##Latest version for gradle
 implementation 'com.github.seperot:SimpleReusableDialog:1.5'
