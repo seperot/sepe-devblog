@@ -52,10 +52,10 @@ RegisterButton adds a button to the next time you call createDialogInstance it h
 * textColor: The button text color, again things like R.color or android.R.color work
 * dialogButtonListener: The button onClickListener, this has to be called in the following format currently until I can figure out how to make it look nicer
 
-#dialogCancelable
+###dialogCancelable
 A simple boolean that turns on or off the users ability to cancel out of the dialog without choosing an option. This also needs to be done before you call createDialogInstance and will reset after use true = they can cancel, false = they cannot cancel This also works for the back button
 
-#createDialogInstance
+###createDialogInstance
 Calls the dialog and shows it to the user, grabs any registered buttons and checks if the dialog is cancelable or not then displays. Has three fields
 
 * title: The dialog title
