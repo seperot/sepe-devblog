@@ -20,23 +20,28 @@ implementation 'com.github.seperot:SimpleReusableDialog:1.5'
 ##Example Button
 
  ```btndemo.setOnClickListener {
-            registerButton(
-                getString(R.string.dialog_one_button_one),
+        registerButton(
+            getString(
+                R.string.dialog_one_button_one),
                 R.color.colorPrimary,
                 android.R.color.white,
                 object : ReusableDialogListener {
-                    override fun onDialogButtonClick(dialogFragment: DialogFragment, index: Int) {
+                    override fun onDialogButtonClick
+                    dialogFragment: DialogFragment, index: Int) {
                         dialogFragment.dismiss()
                     }})
 
             ReusableDialog.dialogCancelable(false)
 
-            ReusableDialog.createDialogInstance(getString(R.string.dialog_one), getString(R.string.dialog_one_text), null).show(
+            ReusableDialog.createDialogInstance(
+                getString(R.string.dialog_one), 
+                getString(R.string.dialog_one_text), 
+                null).show(
                 supportFragmentManager, null
             )
         }
 ```
-    
+
 ##Working parts
 
 #registerButton
@@ -67,9 +72,14 @@ As you can see in this second example, you can expand this to as many buttons as
                 R.color.colorPrimary,
                 android.R.color.black,
                 object: ReusableDialogListener {
-                    override fun onDialogButtonClick(dialogFragment: DialogFragment, index: Int) {
+                    override fun onDialogButtonClick(
+                        dialogFragment: DialogFragment, 
+                        index: Int) {
                     dialogFragment.dismiss()
-                    Toast.makeText(applicationContext, getString(R.string.toast_one), Toast.LENGTH_LONG).show()
+                    Toast.makeText(
+                        applicationContext, 
+                        getString(R.string.toast_one), 
+                        Toast.LENGTH_LONG).show()
                 }})
 
             registerButton(
@@ -77,7 +87,9 @@ As you can see in this second example, you can expand this to as many buttons as
                 R.color.colorPrimaryDark,
                 android.R.color.white,
                object: ReusableDialogListener {
-                   override fun onDialogButtonClick(dialogFragment: DialogFragment, index: Int) {
+                   override fun onDialogButtonClick(
+                       dialogFragment: DialogFragment, 
+                       index: Int) {
                        dialogFragment.dismiss()
                        Toast.makeText(
                            applicationContext,
