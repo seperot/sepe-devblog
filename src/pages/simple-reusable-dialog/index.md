@@ -34,8 +34,9 @@ implementation 'com.github.seperot:SimpleReusableDialog:1.5'
             ReusableDialog.createDialogInstance(getString(R.string.dialog_one), getString(R.string.dialog_one_text), null).show(
                 supportFragmentManager, null
             )
-        }```
-        
+        }
+```
+    
 ##Working parts
 
 #registerButton
@@ -92,7 +93,8 @@ As you can see in this second example, you can expand this to as many buttons as
             ).show(
                 supportFragmentManager, null
             )
-        }```
+        }
+```
 
 ###Planned Features
 ![Bot](./images/bot.png)
