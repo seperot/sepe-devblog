@@ -1,23 +1,23 @@
 ---
 title: Simple Reusable Dialog for Android
 date: "2020-04-08"
-featuredImage: './images/simplebot.jpg'
+featuredImage: './images/dialogbig.jpg'
 ---
 A small native Android/Kotlin library that helps build dialogs with however many buttons in however many styles you want.
 <!-- end -->
 
-###What is it
-![Bot](./images/bot.png)
+#What is it
+![Bot](./images/dialogsmol.png)
 
 Android dialogs can be a bit of a faffy affair, this small lib gives you a range of customability while staying native so a lower risk of compatability issues down the road.
 
-##Latest Version for gradle
+##Latest version for gradle
 implementation 'com.github.seperot:SimpleReusableDialog:1.5'
 
-###How to use it
-![Bot](./images/bot.png)
+#How to use it
+![Bot](./images/howitworks.png)
 
-##Example Button
+##Example button
 
  ```btndemo.setOnClickListener {
         registerButton(
@@ -44,7 +44,7 @@ implementation 'com.github.seperot:SimpleReusableDialog:1.5'
 
 ##Working parts
 
-#registerButton
+###registerButton
 RegisterButton adds a button to the next time you call createDialogInstance it has four parts
 
 * buttonTitle: The text the button shows
@@ -108,12 +108,12 @@ As you can see in this second example, you can expand this to as many buttons as
         }
 ```
 
-###Planned Features
-![Bot](./images/bot.png)
+#Planned features
+![Bot](./images/plan.png)
 Add a setting for custom button margin
 Add a setting for custom button padding
 Add set dialog size and scroll
 
-###Check out the library here
-![Bot](./images/bot.png)
+#Check out the library here
+![Bot](./images/library.png)
 https://github.com/seperot/SimpleReusableDialog
