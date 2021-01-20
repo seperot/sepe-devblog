@@ -110,10 +110,12 @@ As you can see in this second example, you can expand this to as many buttons as
 
 #Planned features
 ![Bot](./images/plan.png)
-Add a setting for custom button margin
-Add a setting for custom button padding
-Add set dialog size and scroll
+
+* Add a setting for custom button margin
+* Add a setting for custom button padding
+* Add set dialog size and scroll
 
 #Check out the library here
 ![Bot](./images/library.png)
+
 https://github.com/seperot/SimpleReusableDialog
