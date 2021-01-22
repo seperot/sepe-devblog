@@ -9,7 +9,7 @@ A smart mirror build with spotify added in
 So for a challenge, I wanted to try and make a Smart Mirror. I wanted to make it functional as a mirror but also cool and with handy extras like USB charge ports and music.
 
 ###Things needed
-![Bot](./images/todolist.png)
+![To Do List](./images/todolist.png)
 
 * __*A screen:*__ I pulled the one I am working with from an old Samsung laptop. You can find controller units on Amazon or Ebay that turn it into standard monitor with ports and controls. Or you can take out the screen from any monitor really.
 
@@ -39,7 +39,7 @@ So for a challenge, I wanted to try and make a Smart Mirror. I wanted to make it
 
 
 ###Setting up the Pie
-![Bot](./images/pie.png)
+![Pie](./images/pie.png)
 
 [We will be using MagicMirror²](https://github.com/MichMich/MagicMirror) for this build, make sure to read up on how to auto start the mirror too [here.](https://github.com/MichMich/MagicMirror/wiki/Auto-Starting-MagicMirror) 
 
@@ -49,7 +49,7 @@ Initially, I had planned on using Google assistant but as the build started Goog
 Honestly once they are working it was smooth sailing!
 
 ###Installation
-![Bot](./images/installation.png)
+![Installation](./images/installation.png)
 
 First I made sure the screen fit into the wood I had cut out. Made sure to use tape to seal any extra light from things like the pie showing up mirror side.
 ![Screen front](./images/screenfront.jpg)
@@ -68,6 +68,6 @@ Finally I turned it all on without the new glass in to make sure it was working.
 
 
 ###All Done
-![Bot](./images/working.png)
+![It is working](./images/working.png)
 
 ![alive](./images/mirrorworking.jpg)

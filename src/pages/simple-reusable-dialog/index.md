@@ -7,7 +7,7 @@ A small native Android/Kotlin library that helps build dialogs with however many
 <!-- end -->
 
 #What is it
-![Bot](./images/dialogsmol.png)
+![Dialog](./images/dialogsmol.png)
 
 Android dialogs can be a bit of a faffy affair, this small lib gives you a range of customizability while staying native so a lower risk of compatibility issues down the road.
 
@@ -15,7 +15,7 @@ Android dialogs can be a bit of a faffy affair, this small lib gives you a range
 implementation 'com.github.seperot:SimpleReusableDialog:1.5'
 
 #How to use it
-![Bot](./images/howitworks.png)
+![How it works](./images/howitworks.png)
 
 ##Example button
 
@@ -109,13 +109,13 @@ As you can see in this second example, you can expand this to as many buttons as
 ```
 
 #Planned features
-![Bot](./images/plan.png)
+![Future Plans](./images/plan.png)
 
 * Add a setting for custom button margin
 * Add a setting for custom button padding
 * Add set dialog size and scroll
 
 #Check out the library here
-![Bot](./images/library.png)
+![Check it out](./images/library.png)
 
 https://github.com/seperot/SimpleReusableDialog

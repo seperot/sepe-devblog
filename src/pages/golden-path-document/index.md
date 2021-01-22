@@ -7,12 +7,12 @@ A golden path document is the best way for new starters to come in strong and he
 <!-- end -->
 
 ###What is a golden path document
-![Bot](./images/goldenpath.png)
+![Golden Path](./images/goldenpath.png)
 
 A Golden path, when talking about software is the ideal route for a user to take. In the case of a shopping app, the golden path would see the user log in, find the item they are looking for easily, go to checkout, and pay all without any issue. A golden path document in this instance is showing the ideal path for a new member of the team to get up and running with the project quickly and easily. The document shouldn't assume much as you don't know where someone’s starting point or gaps in their knowledge will be. For someone, it may be they have never used the CI software your team uses but for someone else it could be they have no idea what to install as their previous company had strict installation rules.
 
 ###How to structure it
-![Bot](./images/structure.png)
+![Structure](./images/structure.png)
 
 __*Start with the basics*__
 
@@ -57,6 +57,6 @@ __*Getting their work live*__
 Finally once they have done all the work and been through the process, they will no doubt want to see their work live. Here you just need to explain the release process and if they need to make release notes. 
 
 ###Make it living
-![Bot](./images/living.png)
+![Living](./images/living.png)
 
 An important part of a golden path document being effective is to keep it as a living document. As the new member of the team works through the document encourage them to edit anything they find as a pain point, something outdated that you had to explain to them or just something they feel like needs more detail. This helps keep the document up to date and makes the new starter have a hand making the process better for the next new starter. Keep the document in an area where you can rollback if something is changed incorrectly but everyone in the team has access, Confluence being a good example. 

@@ -58,7 +58,7 @@ The inner class Engine has a lot more moving parts, but some bits to consider ar
 This should be familiar to anyone who has made an Android app, this is where your android.intent.action.MAIN and android.intent.category.LAUNCHER is set to on the manifest. In this case, it will be the launch point for the settings app.
 
 ###Setting up the simulator
-![Watch](./images/simulator.png)
+![Simulator](./images/simulator.png)
 
 There are a few catches with working on wearOS apps when it comes to debugging, especially with a watch face. The first being the standard configuration. This will always finish building with the settings app open, which if you are working on watch face changes is a bit annoying. It’s better to have this as the configuration settings.
 
@@ -82,7 +82,7 @@ adb connect 127.0.0.1:4444
 Now your wearable should be fully connected and ready to debug
 
 ###Manifest settings
-![Watch](./images/manifest.png)
+![Manifest](./images/manifest.png)
 
 When making a wearable app and specifically a watch face, there are some permissions you need to have set in the manifest. They are:
 
@@ -210,7 +210,7 @@ private fun setTimeandDate() {
 ```
 
 ###Finishing it up and launching
-![Watch](./images/launch.png)
+![Launch](./images/launch.png)
 
 That's mostly in terms of the tricky bits of getting the Turtle wear v2 up and running. The Google play store takes submissions to it just the same as it would an Android app.
 
