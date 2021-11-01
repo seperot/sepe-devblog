@@ -17,7 +17,7 @@ A maintained Android Image for CI pipelines. Can be used for any CICD that uses 
 image: ijhdev/gitlab-ci-fastlane-android
 
 #How to use it
-![how to use the Android Fastlane Image](./images/howitworks.png)
+![how to use the Android Fastlane Image](./images/howitworks.jpg)
 
 ##Example Gitlab .Yaml
 
@@ -88,7 +88,7 @@ Once in Workflow navigate to Stack
 Here you will see default Stack and Workflow Specific Stasks. If you want to change the build image for all steps then use default but if there is just one area failing for you then use the Workflow specific stacks
 
 #But wait
-![theres more!](./images/butwait.png)
+![theres more!](./images/butwait.jpg)
 
 Also included in the Github codebase is an Android auto version updater. The version updater takes your Google Play store listing and checks it against your Gradle version. If your Gradle version number is higher than the app store it will stick with it, if it's equal or lower that the store version then it will take that, +1 to the end, then change the Gradle version for that one.
 
