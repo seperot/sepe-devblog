@@ -1,7 +1,7 @@
 ---
 title: Android Fastlane CICD Image
 date: "2021-11-01"
-featuredImage: './images/androidCILarge.png'
+featuredImage: './images/androidCILarge.jpg'
 ---
 
 Easy to use CI/CD Image for Android builds
