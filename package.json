@@ -1,17 +1,16 @@
 {
   "name": "devblog",
-  "description": "GatsbyJS blog template for developers",
-  "version": "2.0.0",
-  "author": "Ryan Fitzgerald <ryanfitzgeralddev@gmail.com>",
+  "description": "Tech blog for a rambling tech lead",
+  "version": "3.0.0",
+  "author": "Ian Hayward <me@ijh.dev>",
   "bugs": {
-    "url": "https://github.com/ryanfitzgerald/devblog/issues"
+    "url": "https://github.com/seperot/devblog/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.31",
     "gatsby-cli": "^2.6.4",
     "gatsby-image": "^1.0.55",
     "gatsby-paginate": "^1.0.16",
-    "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.0.6",
     "gatsby-plugin-manifest": "^2.0.6",
     "gatsby-plugin-offline": "^2.0.9",
@@ -40,18 +39,20 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.12.0"
   },
-  "homepage": "https://github.com/ryanfitzgerald/devblog#readme",
+  "homepage": "https://ijh.dev",
   "keywords": [
-    "gatsby",
-    "dev",
+    "Android",
+    "iOS",
     "blog",
-    "dev blog"
+    "dev blog",
+    "tech lead",
+    "mobile"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryanfitzgerald/devblog.git"
+    "url": "git+https://github.com/seperot/devblog.git"
   },
   "scripts": {
     "dev": "gatsby develop",
