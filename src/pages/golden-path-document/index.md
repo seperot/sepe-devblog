@@ -1,7 +1,7 @@
 ---
 title: Setting up a Golden Path Document
 date: "2020-02-04"
-featuredImage: './images/goldenpathlarge.png'
+featuredImage: './images/goldenpathlarge.jpg'
 ---
 A golden path document is the best way for new starters to come in strong and help those that come after them
 <!-- end -->
