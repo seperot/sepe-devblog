@@ -9,7 +9,7 @@ Easy to use CI/CD Image for Android builds
 <!-- end -->
 
 #What is it
-![What is it](./images/androidCISmall.png)
+![What is it](./images/androidCISmall.jpg)
 
 A maintained Android Image for CI pipelines. Can be used for any CICD that uses Docker hub, works with standard Android or Fastlane. Use the image as is or pull the code yourself and make it work for your specific needs.
 
@@ -75,15 +75,15 @@ debug_build:
 ##Example Bitrise
 
 Open up bitrise and the project you want to change the image for
-![Bitrise page one](./images/bitrise1.png)
+![Bitrise page one](./images/bitrise1.jpg)
 
 From here click on Workflow
 
-![Bitrise page two](./images/bitrise2.png)
+![Bitrise page two](./images/bitrise2.jpg)
 
 Once in Workflow navigate to Stack
 
-![Bitrise page three](./images/bitrise3.png)
+![Bitrise page three](./images/bitrise3.jpg)
 
 Here you will see default Stack and Workflow Specific Stasks. If you want to change the build image for all steps then use default but if there is just one area failing for you then use the Workflow specific stacks
 
