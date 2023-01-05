@@ -1,6 +1,6 @@
 ---
 title: OKRs
-date: "2023-02-10"
+date: "2023-03-23"
 featuredImage: './images/okrs.jpg'
 ---
 Objectives and Key Results (OKRs) are a goal-setting framework that has been adopted by companies like Google, Intel, and LinkedIn to drive growth and focus.
