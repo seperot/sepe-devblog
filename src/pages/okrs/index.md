@@ -14,6 +14,7 @@ OKRs were first developed by Andy Grove, the former CEO of Intel, in the 1970s. 
 Here's an example of how OKRs might work in practice:
 
 **Objective:** Increase customer satisfaction
+
 **Key results:** 
 * Increase Net Promoter Score (NPS) from 50 to 60
 * Reduce customer churn rate by 10%
