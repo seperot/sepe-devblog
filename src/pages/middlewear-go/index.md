@@ -7,7 +7,7 @@ How to teach yourself a new language and the advantages of a middleware API (Tur
 <!-- end -->
 
 ###History time
-![Watch](./images/trtlwear.png)
+![Watch](./images/trtlwear.jpeg)
 
 A couple of years ago, I knocked together a little watch app for the guys at <a href="https://turtlecoin.lol" target="_blank">Turtlecoin</a>. I wanted to understand both Wear OS and Kotlin better, so a simple watch face that pulls data from a few exchanges for a price seemed easy enough.
 
@@ -16,7 +16,7 @@ An issue I had at the time was the watch face needed to be able to deal with all
 Move ahead to the present, with WearOS now allowing Http requests, most of the exchanges I used for grabbing the price of the coin had vanished, and Google had started depreciating their weather API, the watch face needed a lot of work to be usable.
 
 ###Middleware
-![MiddleMan](./images/mmim.png)
+![MiddleMan](./images/mmim.jpeg)
 
 History lesson aside, why build a middleware API?
 
@@ -25,7 +25,7 @@ History lesson aside, why build a middleware API?
 **Improve readability of app** - A good 50% of the watch face app was JSON parsing and working out the price. When you move all that parsing and logic to the middleware, all the watch face needs to do is receive the API info and display it. With all that code removed, what’s left is far easier to read.
 
 ###Get Go(lang)ing
-![Gopher](./images/gopher.png)
+![Gopher](./images/gopher.jpeg)
 
 The best way I find for learning new languages is just trying things out based on how I think it will work, getting it wrong, looking up how to make it work, and finally fixing it. It’s a great feeling as you go through your project and you notice you are getting more and more right first time.
 
@@ -106,7 +106,7 @@ This allows to have a single error handler that handles different calls and give
 Another important thing when learning a language is to avoid 3rd party libraries where possible. While Gorilla Mux makes complicated handlers and routers easier and setting everything to work as a AWS lambda function is really cool, you won't really understand the problem they fix if you use them from the very beginning.
 
 ###Test all the things
-![Testing](./images/testing.png)
+![Testing](./images/testing.jpeg)
 
 Writing and covering your project in tests is another great way to refine your knowledge and improve your code. While TDD/BDD is great for languages you are comfortable in, when learning a new language, building your unit tests after you've built your project works better. Writing tests for something you can't even conceptualize is really hard and could triple the time before you get that first "it works!" moment. If you write the tests after you have that moment then you can refactor that code down to work with the tests and learn mistakes you made earlier on. As an added bonus, I think doing it this way when learning really gives you an appreciation of how unit tests can help you write better code and make sure it's working before it goes to production.
 
@@ -135,7 +135,7 @@ client *http.Client) map[string]interface{} {
 ```
 
 ###Finishing up
-![Middleware flow](./images/flowmap.png)
+![Middleware flow](./images/flowmap.jpeg)
 
 The end result for me was a nice little 350ish line Golang project. Which [you can check out the code for here](https://github.com/seperot/turtle-wear-api) or if your interested in seeing it working [you can use the swagger doc here](https://app.swaggerhub.com/apis-docs/ijhdev/turtle-wear-api/1.0.0). I would love to get feedback on ways to improve what's here or why I'm wrong.
 

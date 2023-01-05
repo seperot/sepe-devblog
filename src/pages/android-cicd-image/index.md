@@ -101,7 +101,7 @@ curl -O playstorepage https://play.google.com/store/apps/details\?id\=<YourBundl
 ```
 
 #Check out the Image and Code here
-![links](./images/library.png)
+![links](./images/library.jpeg)
 
 https://hub.docker.com/repository/docker/ijhdev/gitlab-ci-fastlane-android/general
 
