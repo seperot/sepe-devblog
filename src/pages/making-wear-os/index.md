@@ -9,7 +9,7 @@ Making a wearOS watch face and avoiding some of the faff. (TurtleWare 2.0 pt2)
 This is part 2 of a 3 part blog post about making v2 of turtle wear watch face. [You can check out part 1 here](https://ijh.dev/middlewear-go)
 
 ###Starting the project off
-![Watch](./images/trtlwear.png)
+![Watch](./images/trtlwear.jpeg)
 
 Starting off, WearOS is the same as Android for 99% of things. Meaning you can write the app Kotlin (or Java if you love some boilerplate) and use all the same Android libraries. So for folder structures and initializing the project can be done in Android Studio just like you would a phone app. For Turtle Wear 2.0, there are two important entry points. The CanvasWatchFaceService and the MainActivity.
 
@@ -58,11 +58,11 @@ The inner class Engine has a lot more moving parts, but some bits to consider ar
 This should be familiar to anyone who has made an Android app, this is where your android.intent.action.MAIN and android.intent.category.LAUNCHER is set to on the manifest. In this case, it will be the launch point for the settings app.
 
 ###Setting up the simulator
-![Simulator](./images/simulator.png)
+![Simulator](./images/simulator.jpeg)
 
 There are a few catches with working on wearOS apps when it comes to debugging, especially with a watch face. The first being the standard configuration. This will always finish building with the settings app open, which if you are working on watch face changes is a bit annoying. It’s better to have this as the configuration settings.
 
-![configSettings](./images/wearconfig.png)
+![configSettings](./images/wearconfig.jpeg)
 
 This way the app will build but nothing will change on the device or simulator. Next is setting up devices to debug the build on. There are two options here:
 
@@ -82,7 +82,7 @@ adb connect 127.0.0.1:4444
 Now your wearable should be fully connected and ready to debug
 
 ###Manifest settings
-![Manifest](./images/manifest.png)
+![Manifest](./images/manifest.jpeg)
 
 When making a wearable app and specifically a watch face, there are some permissions you need to have set in the manifest. They are:
 
@@ -171,7 +171,7 @@ android:usesCleartextTraffic="true”
 ```
 
 ###Drawing the watch face
-![Watch](./images/watchface.png)
+![Watch](./images/watchface.jpeg)
 
 If you check most places for how to draw the watch face, you will generally see very large OnDraw functions that require canvas drawing. I instead prefer to use xml layouts in the same way you would with an android application. This is a little less efficient but a lot more readable code in my opinion. To set this up first have a lateinit View outside the engine. Then on the OnCreate you inflate it like this:
 
@@ -210,7 +210,7 @@ private fun setTimeandDate() {
 ```
 
 ###Finishing it up and launching
-![Launch](./images/launch.png)
+![Launch](./images/launch.jpeg)
 
 That's mostly in terms of the tricky bits of getting the Turtle wear v2 up and running. The Google play store takes submissions to it just the same as it would an Android app.
 
