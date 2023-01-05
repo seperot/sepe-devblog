@@ -120,4 +120,4 @@ fun Preview() {
 ```
 This will create a preview function that you can use to see a live preview of your UI while you are coding.
 
-I hope this has helped you understand what Jetpack Compose is and how to use it to build native Android UI. With Jetpack Compose, you can use a declarative and reactive approach to building UI, which makes it easier to create visually stunning and intuitive layouts. If you have any questions about Jetpack Compose, feel free to ask.
+I hope this has helped you understand what Jetpack Compose is and how to use it to build native Android UI. With Jetpack Compose, you can use a declarative and reactive approach to building UI, which makes it easier to create visually stunning and intuitive layouts.
