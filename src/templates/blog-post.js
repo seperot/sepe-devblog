@@ -48,7 +48,7 @@ class BlogPostTemplate extends React.Component {
            />
            <meta 
              name="twitter:image"
-              content={"https://ijh.dev/twitter-card.png"}
+              content={"https://ijh.dev/twitter-card.jpg"}
             />
             <meta
               name="description"
