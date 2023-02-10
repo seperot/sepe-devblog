@@ -3,10 +3,8 @@ title: Android Gradle tips
 date: "2023-04-14"
 featuredImage: './images/gradleone.jpg'
 ---
-Pointers on the daunting task of becoming the manager of an existing team.
-<!-- end -->
-
 Going over the basics for configuring Gradle on an Android project
+<!-- end -->
 
 Android Gradle is a powerful build tool that allows developers to easily manage dependencies, build multiple variants of an app, and customise build settings. In this blog post, we'll take a look at some tips and tricks for using Android Gradle to streamline your Android development process.
 
