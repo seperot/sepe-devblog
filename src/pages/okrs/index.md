@@ -3,7 +3,7 @@ title: OKRs
 date: "2023-03-24"
 featuredImage: './images/okrs.jpg'
 ---
-Objectives and Key Results (OKRs) are a goal-setting framework that has been adopted by companies like Google, Intel, and LinkedIn to drive growth and focus.
+Objectives and Key Results (OKRs) are a goal-setting framework that has been adopted by companies like Google to drive growth and focus.
 <!-- end -->
 The idea behind OKRs is simple: set clear, measurable objectives and track progress through key results. But OKRs are more than just a set of goals – they are a way of thinking and working that can transform an organization. In this article, we'll explore what OKRs are, the advantages they offer over other goal-setting processes, and some examples of how they have been used in practice.
 
