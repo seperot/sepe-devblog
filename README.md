@@ -6,6 +6,6 @@
 
 You can go to [my site](https://ijh.dev) to see this in action
 
-## License
+## License 
 
 Licensed under MIT License. See [LICENSE.md](LICENSE.md) for more.
